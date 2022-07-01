@@ -1,0 +1,86 @@
+header {
+    height: 90vh;
+    overflow: hidden;
+    padding-top: 6rem;
+}
+
+.header__container {
+    text-align: center;
+    position: relative;
+    height: 100%;
+}
+
+/* CTA styles */
+
+.cta {
+    margin-top: 2.3rem;
+    display: flex;
+    gap: 1.3rem;
+    justify-content: center;
+}
+
+/* SOCIAL ICONS */
+
+.social__icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+    position: absolute;
+    left: 0;
+    bottom: 5rem;
+}
+
+.social__icons::after {
+    content: '';
+    width: 1%;
+    height: 2rem;
+    background: var(--color-primary);
+}
+
+/* ME image style */
+
+.me {
+    /* background: linear-gradient(var(--color-primary), transparent); */
+    width: 22rem;
+    height: 32rem;
+    position: absolute;
+    left: calc(50% - 11rem);
+    margin-top: 3rem;
+    /* border-radius: 12rem 12rem 0 0; */
+    overflow: hidden;
+    /* padding: 6rem 1.6rem 1.6rem 1.6rem; */
+}
+
+/* Scroll down arrow */
+
+.scroll__down {
+    position:absolute;
+    right: -2.3rem;
+    bottom: 6rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+/* Media query for medium size devices */
+@media screen and (max-width: 1024px) {
+    header {
+      height: 70vh;
+    }
+  
+    
+  }
+
+/* Media query for small size devices */
+@media screen and (max-width: 600px) {
+    header {
+      height: 100vh;
+    }
+
+    .social__icons,
+    .scroll__down {
+        display: none;
+    }
+  
+  }
